@@ -1,8 +1,7 @@
 
 <div class="results">
-
 </div>
-<%= form_tag "search/create", method: :get do %>
+<%= form_tag "/search/create", method: :get, remote: true, id: "search-form" do %>
   <%= text_field_tag :keyword, nil, placeholder: " Qué estás buscando" %>
   <%= content_tag :button, type: :submit do %>
   Buscar
