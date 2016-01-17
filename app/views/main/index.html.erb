@@ -1,2 +1,10 @@
-<h1>Main#index</h1>
-<p>Find me in app/views/main/index.html.erb</p>
+
+<div class="results">
+
+</div>
+<%= form_tag "search/create", method: :get do %>
+  <%= text_field_tag :keyword, nil, placeholder: " Qué estás buscando" %>
+  <%= content_tag :button, type: :submit do %>
+  Buscar
+  <% end %>
+<% end %>
