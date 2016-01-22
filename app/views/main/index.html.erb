@@ -1,5 +1,5 @@
 
-<div class="results">
+<div id="results">
 </div>
 <%= form_tag "/search/create", method: :get, remote: true, id: "search-form" do %>
   <%= text_field_tag :keyword, nil, placeholder: " Qué estás buscando" %>
